@@ -11,9 +11,9 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "Telefanz - The Safest Social Platform for Real Connections",
+  title: "Socialy Website - Developer Preview",
   description:
-    "Join Telefanz to create, share, and connect with millions. Go live, chat with friends, watch endless videos, and turn your passion into a career. Download free on iOS & Android.",
+    "This is a demo website",
   keywords: [
     "social media",
     "live streaming",
@@ -23,16 +23,16 @@ export const metadata: Metadata = {
     "creators",
     "messaging app",
   ],
-  authors: [{ name: "Telefanz" }],
+  authors: [{ name: "Demo Website" }],
   openGraph: {
-    title: "Telefanz - The Safest Social Platform for Real Connections",
+    title: "Socialy Website - Developer Preview",
     description: "Create, share, and connect with millions. Go live, chat, and turn your passion into a career.",
     type: "website",
-    siteName: "Telefanz",
+    siteName: "Socialy Website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Telefanz - The Safest Social Platform",
+    title: "Socialy Website - Developer Preview",
     description: "Create, share, and connect with millions worldwide.",
   },
   robots: "index, follow",
