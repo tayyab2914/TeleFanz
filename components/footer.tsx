@@ -3,7 +3,7 @@
 import type React from "react"
 
 import Link from "next/link"
-import { Instagram, Twitter, Youtube, Facebook } from "lucide-react"
+import { Instagram } from "lucide-react"
 import { getDeviceStoreLink } from "@/lib/store-links"
 import Image from "next/image"
 
@@ -13,9 +13,7 @@ const footerLinks = {
     { label: "For Users", href: "#for-users" },
     { label: "For Creators", href: "#for-creators" },
   ],
-  company: [
-    { label: "Contact", href: "#" },
-  ],
+  company: [{ label: "Contact", href: "#" }],
   resources: [
     { label: "Community", href: "#" },
     { label: "Help Center", href: "#" },
@@ -23,14 +21,12 @@ const footerLinks = {
     { label: "Blog", href: "#" },
   ],
   legal: [
-    { label: "Privacy Policy", href: "#" },
-    { label: "Terms of Service", href: "#" },
+    { label: "Privacy Policy", href: "/privacy-policy" },
+    { label: "Terms of Service", href: "/terms-of-use" },
   ],
 }
 
-const socialLinks = [
-  { icon: Instagram, href: "https://www.instagram.com/telefanz.official/", label: "Instagram" },
-]
+const socialLinks = [{ icon: Instagram, href: "https://www.instagram.com/telefanz.official/", label: "Instagram" }]
 
 export function Footer() {
   const handleDownloadClick = (e: React.MouseEvent, href: string) => {
@@ -53,11 +49,8 @@ export function Footer() {
           <div className="col-span-2">
             <Link href="/" className="flex items-center gap-3 group">
               <Image src="/images/logo.png" alt="Telefanz Logo" width={120} height={40} />
-
             </Link>
-            <p className="mt-6 text-white/40 max-w-xs text-base leading-relaxed">
-              Social Media Made Better.
-            </p>
+            <p className="mt-6 text-white/40 max-w-xs text-base leading-relaxed">Social Media Made Better.</p>
 
             {/* Social links */}
             <div className="flex gap-3 mt-8">
@@ -68,6 +61,7 @@ export function Footer() {
                   target="_blank"
                   className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-white/60 hover:bg-purple-500 hover:text-white hover:border-purple-500 transition-all duration-300"
                   aria-label={social.label}
+                  rel="noreferrer"
                 >
                   <social.icon className="w-5 h-5" />
                 </a>
