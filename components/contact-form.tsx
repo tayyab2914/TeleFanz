@@ -193,14 +193,6 @@ export function ContactForm() {
           </>
         )}
       </Button>
-
-      <p className="text-white/40 text-xs text-center">
-        By submitting this form, you agree to our{" "}
-        <a href="/privacy-policy" className="text-purple-400 hover:underline">
-          Privacy Policy
-        </a>
-        .
-      </p>
     </form>
   )
 }
