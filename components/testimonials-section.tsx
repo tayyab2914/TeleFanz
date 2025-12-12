@@ -52,17 +52,16 @@ export function TestimonialsSection() {
     <section className="py-20 sm:py-28 lg:py-36 relative overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_#1a0a2e_0%,_#0d0015_100%)]" />
 
-      {/* Glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-pink-600/10 rounded-full blur-[150px]" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-purple-600/10 rounded-full blur-[150px]" />
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="text-center max-w-3xl mx-auto mb-16 sm:mb-20 lg:mb-24">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-pink-500/10 border border-pink-500/20 mb-6 backdrop-blur-sm">
-            <Star className="w-4 h-4 text-pink-400 fill-pink-400" />
-            <span className="text-sm font-medium text-pink-300">Testimonials</span>
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-500/10 border border-purple-500/20 mb-6 backdrop-blur-sm">
+            <Star className="w-4 h-4 text-purple-400 fill-purple-400" />
+            <span className="text-sm font-medium text-purple-300">Testimonials</span>
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight">
-            Loved by Creators <span className="text-gradient-pink">Worldwide</span>
+            Loved by Creators <span className="text-gradient-purple">Worldwide</span>
           </h2>
           <p className="text-white/50 mt-6 text-base sm:text-lg lg:text-xl max-w-2xl mx-auto">
             See what our community has to say about their Telefanz experience.
@@ -90,9 +89,9 @@ export function TestimonialsSection() {
               {/* Content */}
               <p className="text-base text-white/70 leading-relaxed mb-6">&ldquo;{testimonial.content}&rdquo;</p>
 
-              {/* Author */}
+              {/* Author - purple only gradient */}
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center text-white font-bold text-lg shadow-lg">
+                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-purple-500 to-violet-600 flex items-center justify-center text-white font-bold text-lg shadow-lg">
                   {testimonial.name.charAt(0)}
                 </div>
                 <div>

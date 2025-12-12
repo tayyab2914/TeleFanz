@@ -46,8 +46,8 @@ export function Header() {
         <div className="flex items-center justify-between h-16 sm:h-18 lg:h-20">
           <Link href="/" className="flex items-center gap-2 sm:gap-3 group">
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl blur-lg opacity-60 group-hover:opacity-80 transition-opacity" />
-              <div className="relative w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center shadow-lg">
+              <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-violet-600 rounded-xl blur-lg opacity-60 group-hover:opacity-80 transition-opacity" />
+              <div className="relative w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-br from-purple-500 to-violet-600 flex items-center justify-center shadow-lg">
                 <span className="text-white font-bold text-lg sm:text-xl">T</span>
               </div>
             </div>
@@ -70,7 +70,7 @@ export function Header() {
             <Button variant="ghost" className="text-white/80 hover:text-white hover:bg-white/5">
               Sign In
             </Button>
-            <Button className="bg-gradient-to-r from-purple-500 to-pink-500 text-white hover:shadow-lg hover:shadow-purple-500/30 transition-all duration-300 hover:-translate-y-0.5 border-0">
+            <Button className="bg-gradient-to-r from-purple-500 to-violet-600 text-white hover:shadow-lg hover:shadow-purple-500/30 transition-all duration-300 hover:-translate-y-0.5 border-0">
               <Download className="w-4 h-4 mr-2" />
               Download App
             </Button>
@@ -124,7 +124,7 @@ export function Header() {
             >
               Sign In
             </Button>
-            <Button className="w-full h-12 bg-gradient-to-r from-purple-500 to-pink-500 text-white border-0">
+            <Button className="w-full h-12 bg-gradient-to-r from-purple-500 to-violet-600 text-white border-0">
               <Download className="w-4 h-4 mr-2" />
               Download App
             </Button>

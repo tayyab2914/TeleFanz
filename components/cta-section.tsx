@@ -7,7 +7,7 @@ import { FlowingLines } from "./wave-decoration"
 export function CtaSection() {
   return (
     <section className="py-20 sm:py-28 lg:py-36 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-purple-600 via-purple-700 to-pink-600" />
+      <div className="absolute inset-0 bg-gradient-to-br from-purple-600 via-purple-700 to-violet-800" />
 
       {/* Animated glow orbs */}
       <div className="absolute inset-0 overflow-hidden">
