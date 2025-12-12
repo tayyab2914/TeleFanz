@@ -13,7 +13,7 @@ const footerLinks = {
     { label: "For Users", href: "#for-users" },
     { label: "For Creators", href: "#for-creators" },
   ],
-  company: [{ label: "Contact", href: "#" }],
+  company: [{ label: "Contact", href: "/contact" }],
   resources: [
     { label: "Community", href: "#" },
     { label: "Help Center", href: "#" },
