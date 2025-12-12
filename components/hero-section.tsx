@@ -10,10 +10,9 @@ export function HeroSection() {
     <section className="relative min-h-[100svh] flex items-center justify-center overflow-hidden pt-20 pb-12 sm:pt-24 sm:pb-16 lg:pt-28 lg:pb-20">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_#1a0a2e_0%,_#0d0015_50%,_#050008_100%)]" />
 
-      {/* Glow orbs */}
       <div className="absolute top-1/4 left-[5%] w-[300px] h-[300px] sm:w-[500px] sm:h-[500px] bg-purple-600/30 rounded-full blur-[100px] sm:blur-[150px] animate-pulse-glow" />
       <div
-        className="absolute bottom-1/4 right-[5%] w-[300px] h-[300px] sm:w-[500px] sm:h-[500px] bg-pink-600/25 rounded-full blur-[100px] sm:blur-[150px] animate-pulse-glow"
+        className="absolute bottom-1/4 right-[5%] w-[300px] h-[300px] sm:w-[500px] sm:h-[500px] bg-purple-600/20 rounded-full blur-[100px] sm:blur-[150px] animate-pulse-glow"
         style={{ animationDelay: "1.5s" }}
       />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] sm:w-[600px] sm:h-[600px] bg-purple-500/10 rounded-full blur-[150px]" />
@@ -24,7 +23,7 @@ export function HeroSection() {
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 xl:gap-20 items-center">
-          <div className="text-center lg:text-left order-2 lg:order-1">
+          <div className="text-center lg:text-left order-1 lg:order-1">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-500/10 border border-purple-500/30 mb-6 sm:mb-8 backdrop-blur-sm">
               <span className="relative flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
@@ -34,14 +33,14 @@ export function HeroSection() {
             </div>
 
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold text-white leading-[1.1] tracking-tight">
-              <span className="block">The Safest Social</span>
-              <span className="block">Platform for </span>
-              <span className="text-gradient">Real Connections.</span>
+              <span className="block">Social Media</span>
+              <span className="block">Made </span>
+              <span className="text-gradient">Better.</span>
             </h1>
 
             <p className="mt-5 sm:mt-6 text-base sm:text-lg lg:text-xl text-white/60 max-w-xl mx-auto lg:mx-0 leading-relaxed">
-              Develop authentic connections with your fans, family & friends. Go live, share moments, and express
-              yourself like never before.
+              Your platform for exciting, spontaneous, genuine videos & photos. Watch, engage with what you like, skip
+              what you don't.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-8 sm:mt-10 justify-center lg:justify-start">
@@ -70,47 +69,46 @@ export function HeroSection() {
 
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-6 sm:gap-8 mt-10 sm:mt-12">
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-gradient-to-br from-purple-500/20 to-pink-500/20 backdrop-blur-sm border border-white/10 flex items-center justify-center">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-gradient-to-br from-purple-500/20 to-violet-500/20 backdrop-blur-sm border border-white/10 flex items-center justify-center">
                   <Download className="w-5 h-5 sm:w-6 sm:h-6 text-purple-400" />
                 </div>
                 <div>
-                  <div className="text-xl sm:text-2xl lg:text-3xl font-bold text-white">10M+</div>
+                  <div className="text-xl sm:text-2xl lg:text-3xl font-bold text-white">5K+</div>
                   <div className="text-xs sm:text-sm text-white/50">Downloads</div>
                 </div>
               </div>
               <div className="hidden sm:block w-px h-12 bg-white/10" />
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-gradient-to-br from-pink-500/20 to-purple-500/20 backdrop-blur-sm border border-white/10 flex items-center justify-center">
-                  <Star className="w-5 h-5 sm:w-6 sm:h-6 text-pink-400" />
+                <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-gradient-to-br from-purple-500/20 to-violet-500/20 backdrop-blur-sm border border-white/10 flex items-center justify-center">
+                  <Star className="w-5 h-5 sm:w-6 sm:h-6 text-purple-400" />
                 </div>
                 <div>
-                  <div className="text-xl sm:text-2xl lg:text-3xl font-bold text-white">4.9</div>
-                  <div className="text-xs sm:text-sm text-white/50">App Rating</div>
+                  <div className="text-xl sm:text-2xl lg:text-3xl font-bold text-white">2K+</div>
+                  <div className="text-xs sm:text-sm text-white/50">Active Users</div>
                 </div>
               </div>
               <div className="hidden sm:block w-px h-12 bg-white/10" />
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-gradient-to-br from-purple-500/20 to-pink-500/20 backdrop-blur-sm border border-white/10 flex items-center justify-center">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-gradient-to-br from-purple-500/20 to-violet-500/20 backdrop-blur-sm border border-white/10 flex items-center justify-center">
                   <Users className="w-5 h-5 sm:w-6 sm:h-6 text-purple-400" />
                 </div>
                 <div>
-                  <div className="text-xl sm:text-2xl lg:text-3xl font-bold text-white">150+</div>
-                  <div className="text-xs sm:text-sm text-white/50">Countries</div>
+                  <div className="text-xl sm:text-2xl lg:text-3xl font-bold text-white">1K+</div>
+                  <div className="text-xs sm:text-sm text-white/50">Verified Creators</div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="relative flex justify-center order-1 lg:order-2">
+          <div className="relative flex justify-center order-2 lg:order-2">
             <div className="relative animate-float">
-              {/* Intense glow behind phone */}
-              <div className="absolute inset-0 bg-gradient-to-br from-purple-500/50 via-pink-500/50 to-purple-500/50 rounded-[3rem] blur-[60px] sm:blur-[80px] scale-90" />
+              <div className="absolute inset-0 bg-gradient-to-br from-purple-500/50 via-violet-500/40 to-purple-600/50 rounded-[3rem] blur-[60px] sm:blur-[80px] scale-90" />
 
               {/* Phone frame */}
               <div className="relative">
-                <div className="absolute -inset-1 bg-gradient-to-br from-purple-500 via-pink-500 to-purple-500 rounded-[3rem] opacity-60 blur-sm" />
+                <div className="absolute -inset-1 bg-gradient-to-br from-purple-500 via-violet-500 to-purple-600 rounded-[3rem] opacity-60 blur-sm" />
                 <Image
-                  src="/images/300x650bb.webp"
+                  src="/images/hero-img.webp"
                   alt="Telefanz App - Social Feed"
                   width={300}
                   height={650}
@@ -125,7 +123,7 @@ export function HeroSection() {
                 style={{ animationDelay: "0.5s" }}
               >
                 <div className="flex items-center gap-2 sm:gap-3">
-                  <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center">
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-gradient-to-br from-purple-500 to-violet-500 flex items-center justify-center">
                     <Users className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
                   </div>
                   <div>
@@ -144,7 +142,7 @@ export function HeroSection() {
                     {[1, 2, 3].map((i) => (
                       <div
                         key={i}
-                        className="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 border-2 border-background"
+                        className="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-gradient-to-br from-purple-500 to-violet-500 border-2 border-background"
                       />
                     ))}
                   </div>
@@ -156,13 +154,6 @@ export function HeroSection() {
         </div>
       </div>
 
-      {/* Scroll indicator */}
-      <div className="absolute bottom-6 sm:bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-50">
-        <span className="text-xs text-white/50">Scroll to explore</span>
-        <div className="w-6 h-10 rounded-full border-2 border-white/20 flex items-start justify-center p-2">
-          <div className="w-1 h-2 bg-white/50 rounded-full animate-bounce" />
-        </div>
-      </div>
     </section>
   )
 }

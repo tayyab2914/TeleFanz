@@ -1,44 +1,62 @@
 "use client"
 
-import { Video, MessageCircle, Music, Camera, Shield, Users } from "lucide-react"
+import { Shield, Users, Coins, CheckCircle, Search, Globe, DollarSign, Gift } from "lucide-react"
 import { cn } from "@/lib/utils"
 
 const features = [
   {
-    icon: Video,
-    title: "Watch Endless Videos",
-    description: "Scroll endlessly — new videos appear every second. Discover trending content tailored just for you.",
+    icon: Coins,
+    title: "More Earnings",
+    description: "Earn Coinzz by uploading genuine videos & photos or when Fanz like what you post",
     gradient: "from-purple-500 to-violet-600",
   },
   {
-    icon: MessageCircle,
-    title: "Chat & Connect",
-    description: "Stay in touch with your friends and family through seamless in-app messaging with voice notes.",
-    gradient: "from-pink-500 to-rose-600",
+    icon: CheckCircle,
+    title: "Plus+ Verification",
+    description: "Get noticed by having your profile Verified in few easy steps",
+    gradient: "from-purple-500 to-blue-600",
   },
   {
-    icon: Music,
-    title: "Music & Sound Library",
-    description: "Add music & sounds to your videos — for free! Access thousands of trending tracks and sound effects.",
-    gradient: "from-cyan-500 to-blue-600",
-  },
-  {
-    icon: Camera,
-    title: "Photo & Video Editor",
-    description: "Pause & resume recording in a single video. Apply stunning filters and effects to stand out.",
-    gradient: "from-orange-500 to-amber-600",
+    icon: Gift,
+    title: "Live Stream Revenue",
+    description: "Get paid for being Live & Enjoy gifts during live streams up to 50,000 Coinzz per gift",
+    gradient: "from-violet-500 to-purple-600",
   },
   {
     icon: Shield,
-    title: "Safe & Secure",
-    description: "Your privacy matters. Advanced security features keep your data protected at all times.",
-    gradient: "from-emerald-500 to-green-600",
+    title: "Clean Community",
+    description: "Every post is checked before going live to make sure we keep a safe environment",
+    gradient: "from-blue-500 to-cyan-600",
   },
   {
     icon: Users,
-    title: "Go Live & Earn",
-    description: "Go live and connect with everyone. Send & receive gifts while streaming to your audience.",
-    gradient: "from-purple-500 to-pink-500",
+    title: "Easy Verification",
+    description: "No minimum Fanz required for profile verification or to start posting content",
+    gradient: "from-purple-500 to-violet-500",
+  },
+  {
+    icon: Search,
+    title: "Search By Category",
+    description: "Find Verified Content Creators by their category in a simple click",
+    gradient: "from-cyan-500 to-blue-600",
+  },
+  {
+    icon: Globe,
+    title: "Variety Matters",
+    description: "Apps are available in multiple different languages",
+    gradient: "from-violet-500 to-purple-500",
+  },
+  {
+    icon: DollarSign,
+    title: "Get More For Less",
+    description: "Better Coinzz Purchase Plans - Just More Affordable",
+    gradient: "from-purple-600 to-violet-600",
+  },
+  {
+    icon: Coins,
+    title: "Earn More & More & More",
+    description: "Redeem 50% of your revenue to the bank account you choose",
+    gradient: "from-blue-600 to-purple-600",
   },
 ]
 
@@ -53,13 +71,14 @@ export function FeaturesSection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="text-center max-w-3xl mx-auto mb-16 sm:mb-20 lg:mb-24">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-500/10 border border-purple-500/20 mb-6 backdrop-blur-sm">
-            <span className="text-sm font-medium text-purple-300">Powerful Features</span>
+            <span className="text-sm font-medium text-purple-300">What Makes us Different</span>
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight">
-            Everything You Need to <span className="text-gradient">Create & Connect</span>
+            Be entertained and inspired by a <span className="text-gradient">global community</span>
           </h2>
           <p className="text-white/50 mt-6 text-base sm:text-lg lg:text-xl max-w-2xl mx-auto">
-            Powerful features designed to help you express yourself and build meaningful connections.
+            Whether you are a Celebrity, Content Creator or a Streamer that loves to share moments, there is always a
+            place for you on Telefanz.
           </p>
         </div>
 
@@ -74,7 +93,7 @@ export function FeaturesSection() {
                 "hover:-translate-y-2",
               )}
             >
-              <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-purple-500/5 to-pink-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-purple-500/5 to-violet-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
               <div className="relative">
                 <div
