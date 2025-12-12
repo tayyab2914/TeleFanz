@@ -5,6 +5,8 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Menu, X, Download } from "lucide-react"
 import { cn } from "@/lib/utils"
+import { getDeviceStoreLink } from "@/lib/store-links"
+import Image from "next/image"
 
 const navLinks = [
   { href: "#features", label: "Features" },
@@ -35,6 +37,10 @@ export function Header() {
     return () => window.removeEventListener("resize", handleResize)
   }, [])
 
+  const handleDownloadClick = () => {
+    window.open(getDeviceStoreLink(), "_blank")
+  }
+
   return (
     <header
       className={cn(
@@ -45,13 +51,15 @@ export function Header() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 sm:h-18 lg:h-20">
           <Link href="/" className="flex items-center gap-2 sm:gap-3 group">
+          <Image src="/images/logo.png" alt="Telefanz Logo" width={120} height={40} />
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-violet-600 rounded-xl blur-lg opacity-60 group-hover:opacity-80 transition-opacity" />
-              <div className="relative w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-br from-purple-500 to-violet-600 flex items-center justify-center shadow-lg">
-                <span className="text-white font-bold text-lg sm:text-xl">T</span>
-              </div>
+              {/* <Image src="/images/logo.png" alt="Telefanz Logo" width={120} height={40} /> */}
+                {/* <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-violet-600 rounded-xl blur-lg opacity-60 group-hover:opacity-80 transition-opacity" />
+                <div className="relative w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-br from-purple-500 to-violet-600 flex items-center justify-center shadow-lg">
+                  <span className="text-white font-bold text-lg sm:text-xl">T</span>
+                </div> */}
             </div>
-            <span className="text-lg sm:text-xl font-bold text-white">Telefanz</span>
+            {/* <span className="text-lg sm:text-xl font-bold text-white">Telefanz</span> */}
           </Link>
 
           <nav className="hidden lg:flex items-center gap-1 xl:gap-2">
@@ -67,10 +75,13 @@ export function Header() {
           </nav>
 
           <div className="hidden lg:flex items-center gap-3">
-            <Button variant="ghost" className="text-white/80 hover:text-white hover:bg-white/5">
-              Sign In
+            <Button asChild variant="ghost" className="text-white/80 hover:text-white hover:bg-white/5">
+              <Link href="/coming-soon">Sign In</Link>
             </Button>
-            <Button className="bg-gradient-to-r from-purple-500 to-violet-600 text-white hover:shadow-lg hover:shadow-purple-500/30 transition-all duration-300 hover:-translate-y-0.5 border-0">
+            <Button
+              onClick={handleDownloadClick}
+              className="bg-gradient-to-r from-purple-500 to-violet-600 text-white hover:shadow-lg hover:shadow-purple-500/30 transition-all duration-300 hover:-translate-y-0.5 border-0"
+            >
               <Download className="w-4 h-4 mr-2" />
               Download App
             </Button>
@@ -119,12 +130,21 @@ export function Header() {
           ))}
           <div className="flex flex-col gap-3 pt-4 mt-2 border-t border-white/10">
             <Button
+              asChild
               variant="ghost"
               className="w-full justify-center h-12 text-white/80 hover:text-white hover:bg-white/5"
             >
-              Sign In
+              <Link href="/coming-soon" onClick={() => setIsMobileMenuOpen(false)}>
+                Sign In
+              </Link>
             </Button>
-            <Button className="w-full h-12 bg-gradient-to-r from-purple-500 to-violet-600 text-white border-0">
+            <Button
+              onClick={() => {
+                handleDownloadClick()
+                setIsMobileMenuOpen(false)
+              }}
+              className="w-full h-12 bg-gradient-to-r from-purple-500 to-violet-600 text-white border-0"
+            >
               <Download className="w-4 h-4 mr-2" />
               Download App
             </Button>

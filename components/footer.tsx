@@ -1,19 +1,19 @@
 "use client"
 
+import type React from "react"
+
 import Link from "next/link"
 import { Instagram, Twitter, Youtube, Facebook } from "lucide-react"
+import { getDeviceStoreLink } from "@/lib/store-links"
+import Image from "next/image"
 
 const footerLinks = {
   product: [
     { label: "Features", href: "#features" },
     { label: "For Users", href: "#for-users" },
     { label: "For Creators", href: "#for-creators" },
-    { label: "Download", href: "#" },
   ],
   company: [
-    { label: "About Us", href: "#" },
-    { label: "Careers", href: "#" },
-    { label: "Press Kit", href: "#" },
     { label: "Contact", href: "#" },
   ],
   resources: [
@@ -25,19 +25,21 @@ const footerLinks = {
   legal: [
     { label: "Privacy Policy", href: "#" },
     { label: "Terms of Service", href: "#" },
-    { label: "Cookie Policy", href: "#" },
-    { label: "DMCA", href: "#" },
   ],
 }
 
 const socialLinks = [
-  { icon: Instagram, href: "#", label: "Instagram" },
-  { icon: Twitter, href: "#", label: "Twitter" },
-  { icon: Youtube, href: "#", label: "YouTube" },
-  { icon: Facebook, href: "#", label: "Facebook" },
+  { icon: Instagram, href: "https://www.instagram.com/telefanz.official/", label: "Instagram" },
 ]
 
 export function Footer() {
+  const handleDownloadClick = (e: React.MouseEvent, href: string) => {
+    if (href === "download") {
+      e.preventDefault()
+      window.open(getDeviceStoreLink(), "_blank")
+    }
+  }
+
   return (
     <footer className="relative overflow-hidden">
       <div className="absolute inset-0 bg-[#050008]" />
@@ -50,16 +52,11 @@ export function Footer() {
           {/* Brand */}
           <div className="col-span-2">
             <Link href="/" className="flex items-center gap-3 group">
-              <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-violet-600 rounded-xl blur-lg opacity-60 group-hover:opacity-80 transition-opacity" />
-                <div className="relative w-10 h-10 rounded-xl bg-gradient-to-br from-purple-500 to-violet-600 flex items-center justify-center shadow-lg">
-                  <span className="text-white font-bold text-xl">T</span>
-                </div>
-              </div>
-              <span className="text-xl font-bold text-white">Telefanz</span>
+              <Image src="/images/logo.png" alt="Telefanz Logo" width={120} height={40} />
+
             </Link>
             <p className="mt-6 text-white/40 max-w-xs text-base leading-relaxed">
-              The safest social platform for real connections. Create, share, and connect with millions worldwide.
+              Social Media Made Better.
             </p>
 
             {/* Social links */}
@@ -68,6 +65,7 @@ export function Footer() {
                 <a
                   key={social.label}
                   href={social.href}
+                  target="_blank"
                   className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-white/60 hover:bg-purple-500 hover:text-white hover:border-purple-500 transition-all duration-300"
                   aria-label={social.label}
                 >
@@ -83,7 +81,11 @@ export function Footer() {
             <ul className="space-y-3">
               {footerLinks.product.map((link) => (
                 <li key={link.label}>
-                  <Link href={link.href} className="text-white/40 hover:text-purple-400 transition-colors text-sm">
+                  <Link
+                    href={link.href === "download" ? "#" : link.href}
+                    onClick={(e) => handleDownloadClick(e, link.href)}
+                    className="text-white/40 hover:text-purple-400 transition-colors text-sm"
+                  >
                     {link.label}
                   </Link>
                 </li>
@@ -104,7 +106,7 @@ export function Footer() {
             </ul>
           </div>
 
-          <div>
+          {/* <div>
             <h4 className="font-semibold mb-4 text-white">Resources</h4>
             <ul className="space-y-3">
               {footerLinks.resources.map((link) => (
@@ -115,7 +117,7 @@ export function Footer() {
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
 
           <div>
             <h4 className="font-semibold mb-4 text-white">Legal</h4>

@@ -38,7 +38,7 @@ const faqs = [
 
 export function FaqSection() {
   return (
-    <section id="faq" className="py-20 sm:py-28 lg:py-36 relative overflow-hidden">
+    <section id="faq" className="py-10 relative overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,_#1a0a2e_0%,_#0d0015_100%)]" />
 
       {/* Glow */}

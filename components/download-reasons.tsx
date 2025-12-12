@@ -3,6 +3,7 @@
 import { Check, Apple, Play } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { FlowingLines } from "./wave-decoration"
+import { STORE_LINKS } from "@/lib/store-links"
 
 const reasons = [
   "Watch endless number of videos",
@@ -19,7 +20,7 @@ const reasons = [
 
 export function DownloadReasons() {
   return (
-    <section id="download" className="relative py-20 sm:py-28 lg:py-32 overflow-hidden">
+    <section id="download" className="relative py-10 overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_#1a0a2e_0%,_#0d0015_50%,_#050008_100%)]" />
 
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-purple-600/15 rounded-full blur-[200px]" />
@@ -57,39 +58,39 @@ export function DownloadReasons() {
           <div className="text-center">
             <p className="text-xl sm:text-2xl font-semibold text-white mb-6">So, what are you waiting for?</p>
             <p className="text-white/60 mb-8 max-w-2xl mx-auto">
-              Download the TELEFANZ app today and start enjoying a world of connections easily made.
+              Download the TeleFanz app today and start enjoying a world of connections easily made.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
+                asChild
                 size="lg"
                 className="bg-white text-gray-900 hover:bg-white/90 gap-3 h-14 sm:h-16 px-6 sm:px-8 rounded-2xl shadow-xl hover:shadow-2xl hover:shadow-purple-500/20 transition-all duration-300 hover:-translate-y-1"
               >
-                <Apple className="w-6 h-6 sm:w-7 sm:h-7" />
-                <div className="text-left">
-                  <div className="text-[10px] sm:text-xs opacity-60 leading-none">Download on the</div>
-                  <div className="font-semibold text-sm sm:text-base leading-tight">App Store</div>
-                </div>
+                <a href={STORE_LINKS.appStore} target="_blank" rel="noopener noreferrer">
+                  <Apple className="w-6 h-6 sm:w-7 sm:h-7" />
+                  <div className="text-left">
+                    <div className="text-[10px] sm:text-xs opacity-60 leading-none">Download on the</div>
+                    <div className="font-semibold text-sm sm:text-base leading-tight">App Store</div>
+                  </div>
+                </a>
               </Button>
               <Button
+                asChild
                 size="lg"
                 variant="outline"
                 className="gap-3 h-14 sm:h-16 px-6 sm:px-8 border-white/20 hover:bg-white/10 bg-white/5 backdrop-blur-sm rounded-2xl transition-all duration-300 hover:-translate-y-1 text-white hover:text-white"
               >
-                <Play className="w-6 h-6 sm:w-7 sm:h-7" fill="currentColor" />
-                <div className="text-left">
-                  <div className="text-[10px] sm:text-xs opacity-60 leading-none">Get it on</div>
-                  <div className="font-semibold text-sm sm:text-base leading-tight">Google Play</div>
-                </div>
+                <a href={STORE_LINKS.playStore} target="_blank" rel="noopener noreferrer">
+                  <Play className="w-6 h-6 sm:w-7 sm:h-7" fill="currentColor" />
+                  <div className="text-left">
+                    <div className="text-[10px] sm:text-xs opacity-60 leading-none">Get it on</div>
+                    <div className="font-semibold text-sm sm:text-base leading-tight">Google Play</div>
+                  </div>
+                </a>
               </Button>
             </div>
 
-            <p className="text-white/40 text-sm mt-8">
-              Any feedback? Contact us at{" "}
-              <a href="mailto:support@telefanz.com" className="text-purple-400 hover:text-purple-300 transition-colors">
-                support@telefanz.com
-              </a>
-            </p>
           </div>
         </div>
       </div>

@@ -49,7 +49,7 @@ const testimonials = [
 
 export function TestimonialsSection() {
   return (
-    <section className="py-20 sm:py-28 lg:py-36 relative overflow-hidden">
+    <section className="py-10 relative overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_#1a0a2e_0%,_#0d0015_100%)]" />
 
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-purple-600/10 rounded-full blur-[150px]" />

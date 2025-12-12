@@ -1,8 +1,10 @@
 "use client"
 
 import Image from "next/image"
+import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { TrendingUp, Users, Crown, ArrowRight, Sparkles } from "lucide-react"
+import { getDeviceStoreLink } from "@/lib/store-links"
 
 const benefits = [
   {
@@ -32,8 +34,12 @@ const benefits = [
 ]
 
 export function ForCreators() {
+  const handleDownloadClick = () => {
+    window.open(getDeviceStoreLink(), "_blank")
+  }
+
   return (
-    <section id="for-creators" className="py-20 sm:py-28 lg:py-36 relative overflow-hidden">
+    <section id="for-creators" className="py-10 relative overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_#1a0a2e_0%,_#0d0015_100%)]" />
 
       <div className="absolute top-1/4 right-0 w-[400px] h-[400px] bg-purple-600/20 rounded-full blur-[120px]" />
@@ -110,6 +116,7 @@ export function ForCreators() {
 
             <div className="mt-10 flex flex-col sm:flex-row gap-4">
               <Button
+                onClick={handleDownloadClick}
                 size="lg"
                 className="bg-gradient-to-r from-purple-500 to-violet-600 text-white hover:shadow-lg hover:shadow-purple-500/30 transition-all duration-300 hover:-translate-y-1 h-14 px-8 rounded-2xl group border-0"
               >
@@ -117,11 +124,12 @@ export function ForCreators() {
                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
               </Button>
               <Button
+                asChild
                 size="lg"
                 variant="outline"
                 className="h-14 px-8 rounded-2xl border-white/20 hover:bg-white/10 bg-white/5 text-white hover:text-white"
               >
-                Learn More
+                <Link href="#features">Learn More</Link>
               </Button>
             </div>
           </div>

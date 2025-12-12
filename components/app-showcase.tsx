@@ -27,7 +27,7 @@ const showcaseItems = [
 
 export function AppShowcase() {
   return (
-    <section id="for-users" className="py-20 sm:py-28 lg:py-36 overflow-hidden relative">
+    <section id="for-users" className="py-10 overflow-hidden relative">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,_#1a0a2e_0%,_#0d0015_100%)]" />
 
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[1000px] h-[500px] bg-purple-600/20 rounded-full blur-[150px]" />
