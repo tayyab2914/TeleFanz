@@ -9,10 +9,10 @@ import { getDeviceStoreLink } from "@/lib/store-links"
 import Image from "next/image"
 
 const navLinks = [
-  { href: "#features", label: "Features" },
-  { href: "#for-users", label: "For Users" },
-  { href: "#for-creators", label: "For Creators" },
-  { href: "#faq", label: "FAQ" },
+  { href: "/#features", label: "Features" },
+  { href: "/#for-users", label: "For Users" },
+  { href: "/#for-creators", label: "For Creators" },
+  { href: "/news", label: "News" },
 ]
 
 export function Header() {
@@ -51,13 +51,13 @@ export function Header() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 sm:h-18 lg:h-20">
           <Link href="/" className="flex items-center gap-2 sm:gap-3 group">
-          <Image src="/images/logo.png" alt="Telefanz Logo" width={120} height={40} />
+            <Image src="/images/logo.png" alt="Telefanz Logo" width={120} height={40} />
             <div className="relative">
               {/* <Image src="/images/logo.png" alt="Telefanz Logo" width={120} height={40} /> */}
-                {/* <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-violet-600 rounded-xl blur-lg opacity-60 group-hover:opacity-80 transition-opacity" />
-                <div className="relative w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-br from-purple-500 to-violet-600 flex items-center justify-center shadow-lg">
-                  <span className="text-white font-bold text-lg sm:text-xl">T</span>
-                </div> */}
+              {/* <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-violet-600 rounded-xl blur-lg opacity-60 group-hover:opacity-80 transition-opacity" />
+              <div className="relative w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-br from-purple-500 to-violet-600 flex items-center justify-center shadow-lg">
+                <span className="text-white font-bold text-lg sm:text-xl">T</span>
+              </div> */}
             </div>
             {/* <span className="text-lg sm:text-xl font-bold text-white">Telefanz</span> */}
           </Link>

@@ -24,6 +24,11 @@ export const metadata: Metadata = {
     "messaging app",
   ],
   authors: [{ name: "Telefanz" }],
+  icons: {
+    icon: [
+      { url: "/icon-192.png" },
+    ],
+  },
   openGraph: {
     title: "Telefanz - The Safest Social Platform for Real Connections",
     description: "Create, share, and connect with millions. Go live, chat, and turn your passion into a career.",
@@ -36,7 +41,6 @@ export const metadata: Metadata = {
     description: "Create, share, and connect with millions worldwide.",
   },
   robots: "index, follow",
-    generator: 'v0.app'
 }
 
 export const viewport: Viewport = {
