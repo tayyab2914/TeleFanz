@@ -81,7 +81,7 @@ export function HeroSection() {
                   <Download className="w-5 h-5 sm:w-6 sm:h-6 text-purple-400" />
                 </div>
                 <div>
-                  <div className="text-xl sm:text-2xl lg:text-3xl font-bold text-white">17K+</div>
+                  <div className="text-xl sm:text-2xl font-bold text-white">17K+</div>
                   <div className="text-xs sm:text-sm text-white/50">Downloads</div>
                 </div>
               </div>
@@ -91,7 +91,7 @@ export function HeroSection() {
                   <Star className="w-5 h-5 sm:w-6 sm:h-6 text-purple-400" />
                 </div>
                 <div>
-                  <div className="text-xl sm:text-2xl lg:text-3xl font-bold text-white">9K+</div>
+                  <div className="text-xl sm:text-2xl font-bold text-white">9K+</div>
                   <div className="text-xs sm:text-sm text-white/50">Active Users</div>
                 </div>
               </div>
@@ -101,7 +101,7 @@ export function HeroSection() {
                   <Users className="w-5 h-5 sm:w-6 sm:h-6 text-purple-400" />
                 </div>
                 <div>
-                  <div className="text-xl sm:text-2xl lg:text-3xl font-bold text-white">2.9K+</div>
+                  <div className="text-xl sm:text-2xl font-bold text-white">2.9K+</div>
                   <div className="text-xs sm:text-sm text-white/50">Verified Creators</div>
                 </div>
               </div>
