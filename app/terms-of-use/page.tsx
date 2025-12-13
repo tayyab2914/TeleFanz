@@ -14,7 +14,7 @@ export default function TermsOfServicePage() {
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-32">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">Telefanz Terms of Service</h1>
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">Telefanz Terms of Use</h1>
           <p className="text-white/60 mb-12">Last updated: 17 July 2025</p>
 
           <div className="prose prose-invert prose-lg max-w-none">
