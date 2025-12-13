@@ -4,6 +4,8 @@ import { Check, Apple, Play } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { FlowingLines } from "./wave-decoration"
 import { STORE_LINKS } from "@/lib/store-links"
+import { FaApple } from "react-icons/fa";
+import { BiLogoPlayStore } from "react-icons/bi";
 
 const reasons = [
   "Watch endless number of videos",
@@ -65,10 +67,10 @@ export function DownloadReasons() {
               <Button
                 asChild
                 size="lg"
-                className="bg-white text-gray-900 hover:bg-white/90 gap-3 h-14 sm:h-16 px-6 sm:px-8 rounded-2xl shadow-xl hover:shadow-2xl hover:shadow-purple-500/20 transition-all duration-300 hover:-translate-y-1"
+                className="bg-white text-gray-900 hover:bg-white/90 gap-3 h-16 sm:h-18 px-6 sm:px-8 rounded-2xl shadow-xl hover:shadow-2xl hover:shadow-purple-500/20 transition-all duration-300 hover:-translate-y-1"
               >
                 <a href={STORE_LINKS.appStore} target="_blank" rel="noopener noreferrer">
-                  <Apple className="w-6 h-6 sm:w-7 sm:h-7" />
+                  <FaApple className="w-7! h-7!" />
                   <div className="text-left">
                     <div className="text-[10px] sm:text-xs opacity-60 leading-none">Download on the</div>
                     <div className="font-semibold text-sm sm:text-base leading-tight">App Store</div>
@@ -79,10 +81,10 @@ export function DownloadReasons() {
                 asChild
                 size="lg"
                 variant="outline"
-                className="gap-3 h-14 sm:h-16 px-6 sm:px-8 border-white/20 hover:bg-white/10 bg-white/5 backdrop-blur-sm rounded-2xl transition-all duration-300 hover:-translate-y-1 text-white hover:text-white"
+                className="gap-3 h-16 sm:h-18 px-6 sm:px-8 border-white/20 hover:bg-white/10 bg-white/5 backdrop-blur-sm rounded-2xl transition-all duration-300 hover:-translate-y-1 text-white hover:text-white"
               >
                 <a href={STORE_LINKS.playStore} target="_blank" rel="noopener noreferrer">
-                  <Play className="w-6 h-6 sm:w-7 sm:h-7" fill="currentColor" />
+                  <BiLogoPlayStore className="w-7! h-7!" fill="currentColor" />
                   <div className="text-left">
                     <div className="text-[10px] sm:text-xs opacity-60 leading-none">Get it on</div>
                     <div className="font-semibold text-sm sm:text-base leading-tight">Google Play</div>

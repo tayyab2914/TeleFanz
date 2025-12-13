@@ -12,14 +12,9 @@ const footerLinks = {
     { label: "Features", href: "#features" },
     { label: "For Users", href: "#for-users" },
     { label: "For Creators", href: "#for-creators" },
+    { label: "News", href: "/news" },
   ],
   company: [{ label: "Contact", href: "/contact" }],
-  resources: [
-    { label: "Community", href: "#" },
-    { label: "Help Center", href: "#" },
-    { label: "Creator Hub", href: "#" },
-    { label: "Blog", href: "#" },
-  ],
   legal: [
     { label: "Privacy Policy", href: "/privacy-policy" },
     { label: "Terms of Service", href: "/terms-of-use" },
@@ -100,18 +95,6 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* <div>
-            <h4 className="font-semibold mb-4 text-white">Resources</h4>
-            <ul className="space-y-3">
-              {footerLinks.resources.map((link) => (
-                <li key={link.label}>
-                  <Link href={link.href} className="text-white/40 hover:text-purple-400 transition-colors text-sm">
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div> */}
 
           <div>
             <h4 className="font-semibold mb-4 text-white">Legal</h4>
@@ -130,7 +113,7 @@ export function Footer() {
         {/* Bottom bar */}
         <div className="border-t border-white/10 mt-16 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-white/30 text-sm text-center sm:text-left">
-            © {new Date().getFullYear()} Telefanz. All rights reserved.
+            © Copyright {new Date().getFullYear()} All rights reserved by Telefanz Portal.
           </p>
           <p className="text-white/30 text-sm text-center sm:text-right">Made with love for creators everywhere.</p>
         </div>

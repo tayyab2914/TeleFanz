@@ -5,23 +5,23 @@ import Image from "next/image"
 const showcaseItems = [
   {
     image: "/images/300x650bb-20-282-29.webp",
-    title: "Watch Endless Videos",
-    description: "Scroll endlessly — new videos appear every second.",
+    title: "Endless Video Feed",
+    description: "Keep scrolling — fresh videos load nonstop.",
   },
   {
     image: "/images/300x650bb-20-283-29.webp",
-    title: "Go Live & Connect",
-    description: "Send & receive gifts while you go live.",
+    title: "Live Streaming",
+    description: "Go live and exchange gifts in real time.",
   },
   {
     image: "/images/300x650bb-20-285-29.webp",
-    title: "Chat & Connect",
-    description: "Stay in touch through in-app messaging.",
+    title: "Instant Messaging",
+    description: "Message friends easily inside the app.",
   },
   {
     image: "/images/300x650bb-20-284-29.webp",
-    title: "Photo & Video Editor",
-    description: "Pause & resume recording in a single video.",
+    title: "Built-in Editor",
+    description: "Record seamlessly with pause and resume.",
   },
 ]
 
@@ -38,7 +38,7 @@ export function AppShowcase() {
             <span className="text-sm font-medium text-purple-300">For Users</span>
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight">
-            Your Personalized <span className="text-gradient-purple">Social Experience</span>
+            Be entertained and inspired by a <span className="text-gradient">global community</span>
           </h2>
           <p className="text-white/50 mt-6 text-base sm:text-lg lg:text-xl max-w-2xl mx-auto">
             Share your moments — there&apos;s always a place for you on Telefanz.

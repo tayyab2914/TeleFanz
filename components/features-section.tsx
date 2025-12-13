@@ -7,7 +7,7 @@ const features = [
   {
     icon: Coins,
     title: "More Earnings",
-    description: "Earn Coinzz by uploading genuine videos & photos or when Fanz like what you post",
+    description: "Earn Coinzz when signing up or when Fanz support what you post",
     gradient: "from-purple-500 to-violet-600",
   },
   {
@@ -74,16 +74,17 @@ export function FeaturesSection() {
             <span className="text-sm font-medium text-purple-300">What Makes us Different</span>
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight">
-            Be entertained and inspired by a <span className="text-gradient">global community</span>
+            Your Personalized <span className="text-gradient-purple">Social Experience</span>
           </h2>
           <p className="text-white/50 mt-6 text-base sm:text-lg lg:text-xl max-w-2xl mx-auto">
             Whether you are a Celebrity, Content Creator or a Streamer that loves to share moments, there is always a
             place for you on Telefanz.
           </p>
+         
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 lg:gap-8">
-          {features.map((feature, index) => (
+        <div className="grid place-items-center sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 lg:gap-8">
+          {features.map((feature) => (
             <div
               key={feature.title}
               className={cn(
@@ -91,17 +92,18 @@ export function FeaturesSection() {
                 "glass-card",
                 "hover:border-purple-500/30 transition-all duration-500",
                 "hover:-translate-y-2",
+                "max-w-sm w-full" // ensures consistent centering
               )}
             >
               <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-purple-500/5 to-violet-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
-              <div className="relative">
+              <div className="relative flex flex-col items-center text-center">
                 <div
                   className={cn(
                     "w-14 h-14 sm:w-16 sm:h-16 rounded-2xl flex items-center justify-center mb-6",
                     "bg-gradient-to-br shadow-lg",
                     feature.gradient,
-                    "group-hover:scale-110 group-hover:shadow-xl transition-all duration-500",
+                    "group-hover:scale-110 group-hover:shadow-xl transition-all duration-500"
                   )}
                 >
                   <feature.icon className="w-7 h-7 sm:w-8 sm:h-8 text-white" />
@@ -110,11 +112,16 @@ export function FeaturesSection() {
                 <h3 className="text-xl sm:text-2xl font-semibold text-white mb-3 group-hover:text-purple-300 transition-colors">
                   {feature.title}
                 </h3>
-                <p className="text-sm sm:text-base text-white/50 leading-relaxed">{feature.description}</p>
+
+                <p className="text-sm sm:text-base text-white/50 leading-relaxed text-left w-full">
+                  {feature.description}
+                </p>
               </div>
             </div>
           ))}
         </div>
+
+
       </div>
     </section>
   )

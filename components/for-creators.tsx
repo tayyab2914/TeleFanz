@@ -123,14 +123,6 @@ export function ForCreators() {
                 Download Now
                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
               </Button>
-              <Button
-                asChild
-                size="lg"
-                variant="outline"
-                className="h-14 px-8 rounded-2xl border-white/20 hover:bg-white/10 bg-white/5 text-white hover:text-white"
-              >
-                <Link href="#features">Learn More</Link>
-              </Button>
             </div>
           </div>
         </div>

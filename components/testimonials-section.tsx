@@ -4,43 +4,43 @@ import { Star, Quote } from "lucide-react"
 
 const testimonials = [
   {
-    name: "Sarah Johnson",
-    handle: "@sarahj_creates",
+    name: "Jason Buck",
+    handle: "@BreatheFree",
     content:
       "Telefanz changed my life! I went from 0 to 100k followers in just 3 months. The community is so supportive and the live streaming feature is amazing.",
     rating: 5,
   },
   {
-    name: "Marcus Chen",
-    handle: "@marcusmusic",
+    name: "Ari Carr",
+    handle: "@TapTricks",
     content:
       "As a musician, the music library feature is incredible. I can add licensed tracks to my videos without any copyright issues. Game changer!",
     rating: 5,
   },
   {
-    name: "Emily Rodriguez",
-    handle: "@em_fitness",
+    name: "Peter Bradford",
+    handle: "@OceanTitans",
     content:
       "The video editor is so intuitive! I love being able to pause and resume recording. My content has never looked better.",
     rating: 5,
   },
   {
-    name: "James Wilson",
-    handle: "@jameswilson",
+    name: "Eileen Lee",
+    handle: "@RoadSense",
     content:
       "Finally a social platform that prioritizes safety. I feel comfortable sharing my life here knowing my data is protected.",
     rating: 5,
   },
   {
-    name: "Aria Kim",
-    handle: "@aria_style",
+    name: "Dominik Guzman",
+    handle: "@GreenCycleHub",
     content:
       "The gift system during live streams has helped me earn while doing what I love. Telefanz truly cares about creators.",
     rating: 5,
   },
   {
-    name: "David Martinez",
-    handle: "@davidm_vlogs",
+    name: "Dennis Cook",
+    handle: "@MightyDams",
     content:
       "Best app I've ever used for connecting with my audience. The chat features are seamless and the UI is beautiful.",
     rating: 5,

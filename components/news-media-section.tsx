@@ -5,6 +5,42 @@ import { cn } from "@/lib/utils"
 
 const newsItems = [
   {
+    title: "Telefanz rivals TikTok with a mission to improve social media",
+    source: "Khaleej Times",
+    date: "June 24, 2024",
+    description:
+      "The new social media platform “Telefanz” aims to compete with other social media platforms, particularly TikTok, offering an easy-to-use app in 17 languages, original content done by verified Creators and Streamers only, and a secure community.",
+    url: "https://www.khaleejtimes.com/kt-network/telefanz-rivals-tiktok-with-a-mission-to-improve-social-media",
+    image: "https://imgengine.khaleejtimes.com/khaleejtimes/import/images/KdPpGYX0CY736gkG2mQF22sOPSc.jpg?width=1200&height=800&format=auto",
+  },
+  {
+    title: "The newly launched worldwide Social Media app “Telefanz” rivals the popular Social Media apps and aims to make Social Media a Better Place",
+    source: "Ap News",
+    date: "July 09, 2024",
+    description:
+      "“Telefanz”, the new social media platform for exciting, spontaneous, genuine videos and photos, was officially launched last month with the slogan ‘Social Media Made Better’. Competing with leading platforms like TikTok, “Telefanz” stands out with SocialFi features. It also features Approved & Verified Content Creators, original content, and a secure community, along with support for 17 languages.",
+    url: "https://apnews.com/press-release/marketersmedia/social-media-software-6e0b4edce08efd93418376505dcf232e",
+    image: "https://dims.apnews.com/dims4/default/89fb3d1/2147483647/strip/true/crop/800x533+0+0/resize/800x533!/format/webp/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F4c%2F89%2Fde97f70e120246d9dcca3fe2fc1e%2F2bc9b17194aed6e6757b055ec482218f",
+  },
+  {
+    title: "Telefanz Social media platform",
+    source: "TADVISERS",
+    date: "July 09, 2024",
+    description:
+      "Telefanz provides users with quick login to the platform using Email, Google or Apple Login. The application also provides search for content creators by category and subscription only to those who are in the interests of users. In addition, in the profile settings, it is possible to apply for a verified account without requiring a minimum number of Fanz (subscribers).",
+    url: "https://tadviser.com/index.php/Product:Telefanz_Social_media_platform",
+    image: "https://upworkpreview.com/i/https://www.tadviser.ru/images/a/a9/Ta03.png",
+  },
+  {
+    title: "Telefanz: The Newest Social Media Platform With A Mission To Redefine Social Media",
+    source: "Think Marketing magazine",
+    date: "June 24, 2024",
+    description:
+      "The newest social media platform, Telefanz, has officially launched this June with the slogan “Social Media Made Better.” Designed to bring a fresh perspective to the digital world, Telefanz aims to create a more enjoyable and secure online environment, setting its sights on competing with giants like TikTok. The app’s mission is to redefine how people connect, engage, and earn online, promising a revolutionary shift in the social media landscape.",
+    url: "https://thinkmarketingmagazine.com/telefanz-the-newest-social-media-platform-with-a-mission-to-redefine-social-media/",
+    image: "https://thinkmarketingmagazine.com/wp-content/uploads/2024/06/Telefanz-The-Newest-Social-Media-Platform-With-A-Mission-To-Redefine-Social-Media.jpg",
+  },
+  {
     title: "The newly launched worldwide Social Media app “Telefanz” rivals TikTok and aims to make Social Media a Better Place",
     source: "EyeofRiyadh",
     date: "June 24, 2024",

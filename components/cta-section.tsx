@@ -4,6 +4,8 @@ import { Button } from "@/components/ui/button"
 import { Apple, Play } from "lucide-react"
 import { FlowingLines } from "./wave-decoration"
 import { STORE_LINKS } from "@/lib/store-links"
+import { FaApple } from "react-icons/fa"
+import { BiLogoPlayStore } from "react-icons/bi"
 
 export function CtaSection() {
   return (
@@ -33,7 +35,7 @@ export function CtaSection() {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-green-400"></span>
             </span>
-            <span className="text-sm font-medium text-white">Join 10M+ Users Worldwide</span>
+            <span className="text-sm font-medium text-white">Join Users Worldwide</span>
           </div>
 
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white tracking-tight leading-tight">
@@ -53,10 +55,10 @@ export function CtaSection() {
             <Button
               asChild
               size="lg"
-              className="bg-white text-purple-700 hover:bg-white/90 gap-3 h-16 px-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 w-full sm:w-auto"
+              className="bg-white text-purple-700 hover:bg-white/90 gap-3 h-16 sm:h-18 px-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 w-full sm:w-auto"
             >
               <a href={STORE_LINKS.appStore} target="_blank" rel="noopener noreferrer">
-                <Apple className="w-7 h-7" />
+                <FaApple className="w-7! h-7!" />
                 <div className="text-left">
                   <div className="text-xs opacity-70 leading-none">Download on the</div>
                   <div className="font-semibold text-base leading-tight">App Store</div>
@@ -67,32 +69,16 @@ export function CtaSection() {
               asChild
               size="lg"
               variant="outline"
-              className="border-white/30 text-white hover:bg-white/10 gap-3 h-16 px-8 bg-white/5 backdrop-blur-sm rounded-2xl transition-all duration-300 hover:-translate-y-1 w-full sm:w-auto hover:text-white"
+              className="border-white/30 text-white hover:bg-white/10 gap-3 h-16 sm:h-18 px-8 bg-white/5 backdrop-blur-sm rounded-2xl transition-all duration-300 hover:-translate-y-1 w-full sm:w-auto hover:text-white"
             >
               <a href={STORE_LINKS.playStore} target="_blank" rel="noopener noreferrer">
-                <Play className="w-7 h-7" fill="currentColor" />
+                <BiLogoPlayStore className="w-7! h-7!" fill="currentColor" />
                 <div className="text-left">
                   <div className="text-xs opacity-70 leading-none">Get it on</div>
                   <div className="font-semibold text-base leading-tight">Google Play</div>
                 </div>
               </a>
             </Button>
-          </div>
-
-          {/* Trust indicators */}
-          <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-10 mt-12 text-white/70 text-sm">
-            <span className="flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full bg-green-400" />
-              Free to download
-            </span>
-            <span className="flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full bg-green-400" />
-              No credit card required
-            </span>
-            <span className="flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full bg-green-400" />
-              Cancel anytime
-            </span>
           </div>
         </div>
       </div>
