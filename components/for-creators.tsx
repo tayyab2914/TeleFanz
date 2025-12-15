@@ -81,13 +81,13 @@ export function ForCreators() {
             </div>
           </div>
 
-          <div className="order-1 lg:order-2">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-500/10 border border-purple-500/20 mb-6 backdrop-blur-sm">
+          <div className="order-1 lg:order-2 text-center md:text-left">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-500/10 border border-purple-500/20 mb-6 backdrop-blur-sm ">
               <Crown className="w-4 h-4 text-purple-400" />
               <span className="text-sm font-medium text-purple-300">For Users & Creators</span>
             </div>
 
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight ">
               With Telefanz <span className="text-gradient">You Can Do More</span>
             </h2>
 

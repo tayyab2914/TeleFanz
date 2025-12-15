@@ -17,7 +17,7 @@ const footerLinks = {
   company: [{ label: "Contact", href: "/contact" }],
   legal: [
     { label: "Privacy Policy", href: "/privacy-policy" },
-    { label: "Terms of Service", href: "/terms-of-use" },
+    { label: "Terms of Use", href: "/terms-of-use" },
   ],
 }
 

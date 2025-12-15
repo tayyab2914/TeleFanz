@@ -92,7 +92,7 @@ export function FeaturesSection() {
                 "glass-card",
                 "hover:border-purple-500/30 transition-all duration-500",
                 "hover:-translate-y-2",
-                "max-w-sm w-full" // ensures consistent centering
+                "max-w-sm w-full" 
               )}
             >
               <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-purple-500/5 to-violet-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />

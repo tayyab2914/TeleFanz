@@ -2,11 +2,13 @@
 
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { Apple, Play, Download, Users, Star } from "lucide-react"
+import { Apple, Play, Download, Users, BadgeCheck } from "lucide-react"
 import { FlowingLines } from "./wave-decoration"
 import { STORE_LINKS } from "@/lib/store-links"
 import { FaApple } from "react-icons/fa";
 import { BiLogoPlayStore } from "react-icons/bi";
+import { IoMdCheckmarkCircleOutline } from "react-icons/io";
+
 
 export function HeroSection() {
   return (
@@ -88,7 +90,7 @@ export function HeroSection() {
               <div className="hidden sm:block w-px h-12 bg-white/10" />
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-gradient-to-br from-purple-500/20 to-violet-500/20 backdrop-blur-sm border border-white/10 flex items-center justify-center">
-                  <Star className="w-5 h-5 sm:w-6 sm:h-6 text-purple-400" />
+                  <Users className="w-5 h-5 sm:w-6 sm:h-6 text-purple-400" />
                 </div>
                 <div>
                   <div className="text-xl sm:text-2xl font-bold text-white">9K+</div>
@@ -98,7 +100,8 @@ export function HeroSection() {
               <div className="hidden sm:block w-px h-12 bg-white/10" />
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-gradient-to-br from-purple-500/20 to-violet-500/20 backdrop-blur-sm border border-white/10 flex items-center justify-center">
-                  <Users className="w-5 h-5 sm:w-6 sm:h-6 text-purple-400" />
+                  <IoMdCheckmarkCircleOutline  className="w-7 h-7 sm:w-6 sm:h-6 text-purple-400" />
+
                 </div>
                 <div>
                   <div className="text-xl sm:text-2xl font-bold text-white">2.9K+</div>
