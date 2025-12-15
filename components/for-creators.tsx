@@ -95,24 +95,27 @@ export function ForCreators() {
               You can develop authentic connections with your Fanz on the safest social media platform in the world.
             </p>
 
-            <div className="grid sm:grid-cols-2 gap-4 sm:gap-5 mt-10">
+                        <div className="grid sm:grid-cols-2 gap-4 sm:gap-5 mt-10">
               {benefits.map((benefit) => (
                 <div
                   key={benefit.title}
-                  className="flex gap-4 p-4 sm:p-5 rounded-2xl glass-card hover:border-purple-500/30 transition-all duration-300 group"
+                  className="p-5 sm:p-6 rounded-3xl glass-card hover:border-purple-500/30 transition-all duration-500 hover:-translate-y-2 group"
                 >
-                  <div
-                    className={`w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-gradient-to-br ${benefit.gradient} flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform shadow-lg`}
-                  >
-                    <benefit.icon className="w-6 h-6 sm:w-7 sm:h-7 text-white" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-white text-base sm:text-lg">{benefit.title}</h3>
-                    <p className="text-sm text-white/40 mt-1 leading-relaxed">{benefit.description}</p>
+                  <div className="flex flex-col items-center text-center">
+                    <div
+                      className={`w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-gradient-to-br ${benefit.gradient} flex items-center justify-center mb-5 group-hover:scale-110 transition-all duration-500 shadow-lg`}
+                    >
+                      <benefit.icon className="w-7 h-7 sm:w-8 sm:h-8 text-white" />
+                    </div>
+                    <h3 className="font-semibold text-white text-lg sm:text-xl mb-3 group-hover:text-purple-300 transition-colors">
+                      {benefit.title}
+                    </h3>
+                    <p className="text-sm text-white/50 leading-relaxed">{benefit.description}</p>
                   </div>
                 </div>
               ))}
             </div>
+
 
             <div className="mt-10 flex flex-col sm:flex-row gap-4">
               <Button

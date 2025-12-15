@@ -57,18 +57,18 @@ export function Header() {
         )}
       >
         <div className=" mx-auto px-4 sm:px-6 lg:px-8 ">
-          <div className="flex items-center justify-between h-16 sm:h-18 lg:h-20">
+          <div className="flex items-center justify-between h-16 sm:h-18 lg:h-20 relative">
             <Link href="/" className="flex items-center gap-2 sm:gap-3 group">
-              <Image src="/images/logo.png" alt="Telefanz Logo" width={200} height={40} />
+              <Image src="/images/logo.png" alt="Telefanz Logo" width={190} height={40} />
               <div className="relative"></div>
             </Link>
 
-            <nav className="hidden lg:flex items-center gap-1 xl:gap-2">
+            <nav className="hidden lg:flex items-center gap-1 xl:gap-2 absolute left-1/2 transform -translate-x-1/2">
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="px-3 xl:px-4 py-2 text-sm font-medium text-white/70 hover:text-white rounded-lg hover:bg-white/5 transition-all duration-200"
+                  className=" px-3 xl:px-4 py-2 text-sm font-medium text-white/70 hover:text-white rounded-lg hover:bg-white/5 transition-all duration-200"
                 >
                   {link.label}
                 </Link>
